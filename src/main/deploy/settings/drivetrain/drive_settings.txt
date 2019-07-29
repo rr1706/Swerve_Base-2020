@@ -1,0 +1,10 @@
+front_right_ports=0,0,8,9
+front_left_ports=1,1,6,7
+back_left_ports=2,2,4,5
+back_right_ports=3,3,1,2
+
+offsets=120.0,346.0,335.0,227.5
+
+positions=10.25,12.7:10.25,-12.7:-10.25,-12.7:-10.25,12.7
+
+ticks_per_revolution=1024
