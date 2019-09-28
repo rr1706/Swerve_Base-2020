@@ -38,6 +38,8 @@ public class Robot extends TimedRobot {
     SwerveDrivetrain.loadPorts("/home/lvuser/deploy/settings/drivetrain/drive_settings.txt");
     driveTrain = new SwerveDrivetrain();
     IMU.init();
+    xbox1.setDeadband(0.09);
+    //xbox2.setDeadband(0.09);
   }
 
   @Override
@@ -46,23 +48,28 @@ public class Robot extends TimedRobot {
 
   @Override
   public void autonomousPeriodic() {
+    teleopPeriodic();
   }
 
   @Override
   public void teleopInit() {
-    xbox1.setDeadband(0.09);
-    //xbox2.setDeadband(0.09);
   }
 
   @Override
   public void teleopPeriodic() {
     // Drive commands (-1.0 to 1.0)
     FWD = xbox1.LStickY() / 10.5 * DriverStation.getBatteryVoltage();
-    STR = xbox1.LStickX() / 10.5 * DriverStation.getBatteryVoltage();
+    STR = -xbox1.LStickX() / 10.5 * DriverStation.getBatteryVoltage();
     RCW = xbox1.RStickX()/ 10.5 * DriverStation.getBatteryVoltage();
 
+    if (xbox1.RStickButton()) {
+      driveTrain.lock();
+    } else {
+      driveTrain.unlock();
+    }
+
     if (xbox1.RB()) {
-      driveTrain.drive(new Pair<Double, Double>(STR, FWD), RCW);
+      driveTrain.drive(new Pair<>(STR, FWD), RCW);
     } else {
       driveTrain.drive(MathUtils.convertOrientation(imu.getAngle(), FWD, STR), RCW);
     }
