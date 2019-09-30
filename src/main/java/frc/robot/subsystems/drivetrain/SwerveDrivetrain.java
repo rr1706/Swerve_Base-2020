@@ -90,4 +90,18 @@ public class SwerveDrivetrain {
             wheel.drive();
         }
     }
+
+    public void lock() {
+        swerveModules.get(WheelType.FRONT_LEFT).setDefenceMode(-90.0);
+        swerveModules.get(WheelType.FRONT_RIGHT).setDefenceMode(90.0);
+        swerveModules.get(WheelType.BACK_RIGHT).setDefenceMode(-90.0);
+        swerveModules.get(WheelType.BACK_LEFT).setDefenceMode(90.0);
+    }
+
+    public void unlock() {
+        for (WheelType type : swerveModules.keySet()) {
+            SwerveModule wheel = swerveModules.get(type);
+            wheel.setDefenceMode(0.0);
+        }
+    }
 }

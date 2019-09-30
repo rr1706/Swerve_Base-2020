@@ -24,6 +24,8 @@ class SwerveModule {
     private boolean wheelReversed;
     private Pair <Double, Double> position;
 
+    private double defence = 0.0;
+
     SwerveModule(int translationPort, int rotationPort, int encoderPort1, int encoderPort2, double potentiometerOffset, String position, int tpr) {
         super();
 
@@ -58,7 +60,7 @@ class SwerveModule {
         angleError = rotationMotor.getClosedLoopError(0);
 
         // 359 --> 361 instead of 359 --> 1, so module does not reverse rotation when crossing 0 degrees
-        rotationCount = Math.floor(rotationMotor.getSensorCollection().getAnalogIn() / ticksPerRevolution);
+        rotationCount = Math.floor((rotationMotor.getSensorCollection().getAnalogIn()) / ticksPerRevolution);
         unwrappedAngleCommand = angleCommand + rotationCount * ticksPerRevolution;
         unwrappedAngleError = unwrappedAngleCommand - rotationMotor.getSensorCollection().getAnalogIn();
 
@@ -84,20 +86,24 @@ class SwerveModule {
             translationMotor.set(0.0);
         }
 
-        // Turn only when there is a translation command
-        if (Math.abs(speedCommand) > 0.1) {
+        // Turn only when there is a translation or lock command
+        if (Math.abs(speedCommand) > 0.1 || defence != 0.0) {
             rotationMotor.set(ControlMode.Position, finalAngleCommand);
         } else {
             rotationMotor.set(ControlMode.Current, 0.0);
         }
-}
+    }
+
+    void setDefenceMode(double angle) {
+        defence = angle;
+    }
 
     void setSpeedCommand(double speedCommand) {
         this.speedCommand = speedCommand;
     }
 
     void setAngleCommand(double angleCommand) {
-        this.angleCommand = angleCommand;
+        this.angleCommand = angleCommand + defence;
     }
 
     Pair<Double, Double> getPosition() {
