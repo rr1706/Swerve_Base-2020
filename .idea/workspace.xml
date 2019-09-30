@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="b9e90f02-48cf-46fe-9c0c-1d8d2cbfa134" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/8650ffa0edec8f420002150f4e92e97c2a9d96ea" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/8650ffa0edec8f420002150f4e92e97c2a9d96ea" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9e7627a625cdcc28442de77044f5c412c6bf92c5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9e7627a625cdcc28442de77044f5c412c6bf92c5" afterDir="false" />
@@ -14,6 +15,11 @@
 =======
     <list default="true" id="b9e90f02-48cf-46fe-9c0c-1d8d2cbfa134" name="Default Changelist" comment="" />
 >>>>>>> ccf556bdd3efd1fe92384dc3bfd587c2efe61f35
+=======
+    <list default="true" id="b9e90f02-48cf-46fe-9c0c-1d8d2cbfa134" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Swerve_Base-2020/.gitattributes" beforeDir="false" />
+    </list>
+>>>>>>> parent of ccf556b... Post- GRC Changes
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -37,23 +43,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/Robot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1682#1683#0" expanded="true" />
-                <element signature="e#1708#1709#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/subsystems/drivetrain/SwerveDrivetrain.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="80">
               <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
@@ -61,6 +54,10 @@
             <state relative-caret-position="377">
               <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
 >>>>>>> ccf556bdd3efd1fe92384dc3bfd587c2efe61f35
+=======
+            <state relative-caret-position="320">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+>>>>>>> parent of ccf556b... Post- GRC Changes
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,6 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/subsystems/drivetrain/SwerveModule.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="624">
               <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
@@ -84,6 +82,26 @@
                 <element signature="e#3777#3778#0" expanded="true" />
                 <element signature="e#3809#3810#0" expanded="true" />
 >>>>>>> ccf556bdd3efd1fe92384dc3bfd587c2efe61f35
+=======
+            <state relative-caret-position="120">
+              <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3670#3671#0" expanded="true" />
+                <element signature="e#3718#3719#0" expanded="true" />
+                <element signature="e#3767#3768#0" expanded="true" />
+                <element signature="e#3815#3816#0" expanded="true" />
+                <element signature="e#3857#3858#0" expanded="true" />
+                <element signature="e#3888#3889#0" expanded="true" />
+                <element signature="e#3950#3951#0" expanded="true" />
+                <element signature="e#3990#3991#0" expanded="true" />
+                <element signature="e#4022#4023#0" expanded="true" />
+                <element signature="e#4062#4063#0" expanded="true" />
+                <element signature="e#4262#4263#0" expanded="true" />
+                <element signature="e#4293#4294#0" expanded="true" />
+                <element signature="e#4319#4320#0" expanded="true" />
+                <element signature="e#4348#4349#0" expanded="true" />
+>>>>>>> parent of ccf556b... Post- GRC Changes
               </folding>
             </state>
           </provider>
@@ -93,12 +111,17 @@
         <entry file="file://$PROJECT_DIR$/src/main/deploy/settings/drivetrain/drive_settings.txt">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="48">
               <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
 =======
             <state relative-caret-position="153">
               <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
 >>>>>>> ccf556bdd3efd1fe92384dc3bfd587c2efe61f35
+=======
+            <state relative-caret-position="112">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+>>>>>>> parent of ccf556b... Post- GRC Changes
             </state>
           </provider>
         </entry>
@@ -107,13 +130,21 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/subsystems/IMU.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="608">
 =======
             <state relative-caret-position="646">
 >>>>>>> ccf556bdd3efd1fe92384dc3bfd587c2efe61f35
+=======
+            <state relative-caret-position="167">
+>>>>>>> parent of ccf556b... Post- GRC Changes
               <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#886#887#0" expanded="true" />
+                <element signature="e#946#947#0" expanded="true" />
+                <element signature="e#1116#1117#0" expanded="true" />
+                <element signature="e#1142#1143#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,11 +170,29 @@
               <caret line="26" column="95" selection-start-line="26" selection-start-column="95" selection-end-line="26" selection-end-column="95" />
 =======
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/Robot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#2158#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/utilities/PIDController.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="391">
               <caret line="24" column="77" selection-start-line="24" selection-start-column="77" selection-end-line="24" selection-end-column="77" />
 >>>>>>> ccf556bdd3efd1fe92384dc3bfd587c2efe61f35
+=======
+            <state relative-caret-position="272">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+>>>>>>> parent of ccf556b... Post- GRC Changes
               <folding>
                 <element signature="e#0#8088#0" expanded="true" />
               </folding>
@@ -155,10 +204,14 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/utilities/MathUtils.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="96">
 =======
             <state relative-caret-position="102">
 >>>>>>> ccf556bdd3efd1fe92384dc3bfd587c2efe61f35
+=======
+            <state relative-caret-position="68">
+>>>>>>> parent of ccf556b... Post- GRC Changes
               <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
             </state>
           </provider>
@@ -192,7 +245,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Swerve_Base-2020" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -201,18 +254,24 @@
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/utilities/MathUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/IMU.java" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/drivetrain/SwerveModule.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/drivetrain/SwerveDrivetrain.java" />
 =======
 >>>>>>> ccf556bdd3efd1fe92384dc3bfd587c2efe61f35
         <option value="$PROJECT_DIR$/src/main/deploy/settings/drivetrain/drive_settings.txt" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/Robot.java" />
+=======
+>>>>>>> parent of ccf556b... Post- GRC Changes
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/drivetrain/SwerveModule.java" />
+        <option value="$PROJECT_DIR$/src/main/deploy/settings/drivetrain/drive_settings.txt" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/drivetrain/SwerveDrivetrain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/Robot.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <option name="x" value="-10" />
     <option name="y" value="-10" />
@@ -222,6 +281,12 @@
     <option name="width" value="683" />
     <option name="height" value="728" />
 >>>>>>> ccf556bdd3efd1fe92384dc3bfd587c2efe61f35
+=======
+    <option name="x" value="-11" />
+    <option name="y" value="-1091" />
+    <option name="width" value="1943" />
+    <option name="height" value="1043" />
+>>>>>>> parent of ccf556b... Post- GRC Changes
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -229,6 +294,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -246,31 +312,50 @@
               <item name="Swerve_Base-2020" type="b2602c69:ProjectViewProjectNode" />
               <item name="Swerve_Base-2020" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="Swerve_Base-2020" type="b2602c69:ProjectViewProjectNode" />
               <item name="Swerve_Base-2020" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="deploy" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Swerve_Base-2020" type="b2602c69:ProjectViewProjectNode" />
               <item name="Swerve_Base-2020" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="deploy" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="robot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Swerve_Base-2020" type="b2602c69:ProjectViewProjectNode" />
               <item name="Swerve_Base-2020" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="deploy" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="robot" type="462c0819:PsiDirectoryNode" />
+              <item name="subsystems" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Swerve_Base-2020" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Swerve_Base-2020" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="robot" type="462c0819:PsiDirectoryNode" />
+              <item name="subsystems" type="462c0819:PsiDirectoryNode" />
               <item name="drivetrain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Swerve_Base-2020" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Swerve_Base-2020" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="robot" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Swerve_Base-2020" type="b2602c69:ProjectViewProjectNode" />
@@ -285,7 +370,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -296,11 +380,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565043706352" />
 =======
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569705258812" />
 >>>>>>> ccf556bdd3efd1fe92384dc3bfd587c2efe61f35
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563839893613" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Libraries/SPARK-MAX-roboRIO-SDK-1.1.9/maven/com/revrobotics/frc/SparkMax-java/1.1.9/SparkMax-java-1.1.9-javadoc.jar!/" />
+>>>>>>> parent of ccf556b... Post- GRC Changes
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -345,6 +434,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Batch.Gradle Deploy" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -368,6 +462,7 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
@@ -378,6 +473,11 @@
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07639939" />
 >>>>>>> ccf556bdd3efd1fe92384dc3bfd587c2efe61f35
+=======
+    <frame x="-7" y="-1087" width="1295" height="695" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19676113" />
+>>>>>>> parent of ccf556b... Post- GRC Changes
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -431,6 +531,7 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/subsystems/drivetrain/SwerveDrivetrain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -440,25 +541,34 @@
           </folding>
 =======
     <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/subsystems/IMU.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/deploy/settings/drivetrain/drive_settings.txt">
+>>>>>>> parent of ccf556b... Post- GRC Changes
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="112">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/utilities/MathUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/subsystems/drivetrain/SwerveDrivetrain.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="102">
           <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
 >>>>>>> ccf556bdd3efd1fe92384dc3bfd587c2efe61f35
+=======
+        <state relative-caret-position="320">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> parent of ccf556b... Post- GRC Changes
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/utilities/PIDController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/subsystems/drivetrain/SwerveModule.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="624">
           <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
@@ -470,10 +580,31 @@
           <folding>
             <element signature="e#0#8088#0" expanded="true" />
 >>>>>>> ccf556bdd3efd1fe92384dc3bfd587c2efe61f35
+=======
+        <state relative-caret-position="120">
+          <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3670#3671#0" expanded="true" />
+            <element signature="e#3718#3719#0" expanded="true" />
+            <element signature="e#3767#3768#0" expanded="true" />
+            <element signature="e#3815#3816#0" expanded="true" />
+            <element signature="e#3857#3858#0" expanded="true" />
+            <element signature="e#3888#3889#0" expanded="true" />
+            <element signature="e#3950#3951#0" expanded="true" />
+            <element signature="e#3990#3991#0" expanded="true" />
+            <element signature="e#4022#4023#0" expanded="true" />
+            <element signature="e#4062#4063#0" expanded="true" />
+            <element signature="e#4262#4263#0" expanded="true" />
+            <element signature="e#4293#4294#0" expanded="true" />
+            <element signature="e#4319#4320#0" expanded="true" />
+            <element signature="e#4348#4349#0" expanded="true" />
+>>>>>>> parent of ccf556b... Post- GRC Changes
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/deploy/settings/drivetrain/drive_settings.txt">
 <<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
@@ -499,14 +630,25 @@
           <folding>
             <element signature="e#0#8088#0" expanded="true" />
 =======
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/subsystems/IMU.java">
+>>>>>>> parent of ccf556b... Post- GRC Changes
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="167">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/subsystems/drivetrain/SwerveModule.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/utilities/MathUtils.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="122">
           <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
           <folding>
@@ -525,18 +667,28 @@
           <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
 =======
     <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/subsystems/drivetrain/SwerveDrivetrain.java">
+=======
+        <state relative-caret-position="68">
+          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/Robot.java">
+>>>>>>> parent of ccf556b... Post- GRC Changes
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
+        <state relative-caret-position="396">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
           <folding>
+            <element signature="e#0#2158#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
 >>>>>>> ccf556bdd3efd1fe92384dc3bfd587c2efe61f35
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/Robot.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/utilities/PIDController.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="463">
           <caret line="41" column="2" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
@@ -550,6 +702,12 @@
             <element signature="e#1682#1683#0" expanded="true" />
             <element signature="e#1708#1709#0" expanded="true" />
 >>>>>>> ccf556bdd3efd1fe92384dc3bfd587c2efe61f35
+=======
+        <state relative-caret-position="272">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#8088#0" expanded="true" />
+>>>>>>> parent of ccf556b... Post- GRC Changes
           </folding>
         </state>
       </provider>
