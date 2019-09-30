@@ -1,13 +1,13 @@
 
-msquid:S00116"NRename this field "FWD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ž—ÁÀ8Ü¶¤Á¿-
-isquid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.(”¾Þø8ŒŒÔÁ¿-
-˜squid:S1186("€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‡¹ýâ
-squid:S1186,"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(€£ë€üÿÿÿÿ
-psquid:S1450"RRemove the "STR" field and declare it as a local variable in the relevant methods.(æÃÄ˜8Î×©Á¿-
-rsquid:S00116"NRename this field "RCW" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä§íøÿÿÿÿ8Ü¶¤Á¿-
-˜squid:S1186D"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®ƒª¼
-psquid:S1450"RRemove the "FWD" field and declare it as a local variable in the relevant methods.(Ž—ÁÀ8Î×©Á¿-
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ëÿø•8‡©ÓÁ¿-
-usquid:S1450"RRemove the "RCW" field and declare it as a local variable in the relevant methods.(Ä§íøÿÿÿÿ8´í¶Á¿-
-msquid:S00116"NRename this field "STR" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÃÄ˜8Ü¶¤Á¿-
-squid:S1186@"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(†õÝâûÿÿÿÿ
+psquid:S1450"RRemove the "STR" field and declare it as a local variable in the relevant methods.(æÃÄ˜8Î×©Á¿-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ëÿø•8‡©ÓÁ¿-
+usquid:S1450 "RRemove the "RCW" field and declare it as a local variable in the relevant methods.(Ä§íøÿÿÿÿ8´í¶Á¿-
+msquid:S00116"NRename this field "STR" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÃÄ˜8Ü¶¤Á¿-
+˜squid:S1186P"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®ƒª¼
+psquid:S1450"RRemove the "FWD" field and declare it as a local variable in the relevant methods.(Ž—ÁÀ8Î×©Á¿-
+squid:S11860"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(€£ë€üÿÿÿÿ
+rsquid:S00116 "NRename this field "RCW" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä§íøÿÿÿÿ8Ü¶¤Á¿-
+isquid:CommentedOutCodeLine6"<This block of commented-out lines of code should be removed.(”¾Þø8ŒŒÔÁ¿-
+˜squid:S1186,"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‡¹ýâ
+squid:S1186L"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(†õÝâûÿÿÿÿ
+msquid:S00116"NRename this field "FWD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ž—ÁÀ8Ü¶¤Á¿-

@@ -1,14 +1,13 @@
 
-nsquid:S3008"RRename this field "BRPorts" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂšÿÏşÿÿÿÿ
-Fsquid:S30101"*Remove this assignment of "swerveModules".(ûàèıÿÿÿÿ
 isquid:S3008"RRename this field "Offsets" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â´˜
-nsquid:S3008"RRename this field "BLPorts" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°øúœıÿÿÿÿ
-Rsquid:S2864Q"4Iterate over the "entrySet" instead of the "keySet".(˜©¦Ì8³ Õ¿¿-
-nsquid:S3008"RRename this field "FLPorts" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉÖ³Ùøÿÿÿÿ
-Rsquid:S2864="4Iterate over the "entrySet" instead of the "keySet".(˜©¦Ì8¥¶ëÀ¿-
-nsquid:S3008"RRename this field "FRPorts" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û‘ê£ùÿÿÿÿ
-Fsquid:S1148#"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§¶µ¿¿-
-Bsquid:S16401"Convert this Map to an EnumMap.(ûàèıÿÿÿÿ8‡§®¿¿-
-Rsquid:S2864X"4Iterate over the "entrySet" instead of the "keySet".(˜©¦Ì8³ Õ¿¿-
 ysquid:S3008"VRename this field "TicksPerRev" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ëÒûÿÿÿÿ8ªƒ¯ŞÁ-
+Fsquid:S1148#"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§¶µ¿¿-
+nsquid:S3008"RRename this field "FRPorts" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û‘ê£ùÿÿÿÿ
 wsquid:S3008"TRename this field "Positions" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸¦äÛşÿÿÿÿ8ùÛû¿¿-
+nsquid:S3008"RRename this field "BLPorts" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°øúœıÿÿÿÿ
+nsquid:S3008"RRename this field "FLPorts" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉÖ³Ùøÿÿÿÿ
+=squid:S1640"Convert this Map to an EnumMap.(öÊ ¡8—Ç¾ÿÃ-
+Rsquid:S2864<"4Iterate over the "entrySet" instead of the "keySet".(˜©¦Ì8¥¶ëÀ¿-
+Rsquid:S2864W"4Iterate over the "entrySet" instead of the "keySet".(˜©¦Ì8³ Õ¿¿-
+Rsquid:S2864P"4Iterate over the "entrySet" instead of the "keySet".(˜©¦Ì8¿Ö°ÿÃ-
+nsquid:S3008"RRename this field "BRPorts" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂšÿÏşÿÿÿÿ
