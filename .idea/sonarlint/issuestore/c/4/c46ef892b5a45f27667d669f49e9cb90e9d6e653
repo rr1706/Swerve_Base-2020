@@ -1,24 +1,0 @@
-
-hsquid:S00117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ãá
-nsquid:S00116"VRename this field "m_prevError" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…×Å¾
-ssquid:S00116"VRename this field "m_tolerance" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿÆ×Ùşÿÿÿÿ
-qsquid:S00116"YRename this field "m_maximumInput" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëâÀ
-Ksquid:S1066C"/Merge this if statement with the enclosing one.(¢›ï—üÿÿÿÿ
-isquid:S37769"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(´ô£ç
-jsquid:S00116"RRename this field "m_input" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğè¿ş
-nsquid:S00116#"QRename this field "m_IMax" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„£—‰øÿÿÿÿ
-psquid:S00116""SRename this field "m_result" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö„ì›üÿÿÿÿ
-wsquid:S00116"ZRename this field "m_maximumOutput" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ù†şÿÿÿÿ
-msquid:S00116 "URename this field "m_setpoint" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ¥òô
-ksquid:S00116"NRename this field "m_D" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²äšĞıÿÿÿÿ
-hsquid:S00117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ãá
-osquid:S00116"WRename this field "m_totalError" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ƒŒÿ
-qsquid:S00116"YRename this field "m_minimumInput" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ‚éì
-jsquid:S00116!"RRename this field "m_error" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø£Øî
-hsquid:S00117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ãá
-jsquid:S00117š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶îÜº
-ksquid:S00116"NRename this field "m_P" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥·Ÿåùÿÿÿÿ
-osquid:S00116"WRename this field "m_continuous" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä×İŸ
-rsquid:S00116"ZRename this field "m_minimumOutput" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óõÕ‡
-ksquid:S00116"NRename this field "m_I" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä©³‚øÿÿÿÿ
-lsquid:S00116"TRename this field "m_enabled" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸŠÏö

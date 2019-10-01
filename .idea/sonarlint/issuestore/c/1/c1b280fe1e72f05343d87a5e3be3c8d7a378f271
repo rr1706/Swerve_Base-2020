@@ -1,14 +1,0 @@
-
-ysquid:S3008"VRename this field "TicksPerRev" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ëÒûÿÿÿÿ8ªƒ¯ŞÁ-
-Rsquid:S2864P"4Iterate over the "entrySet" instead of the "keySet".(˜©¦Ì8¿Ö°ÿÃ-
-nsquid:S3008"RRename this field "BLPorts" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°øúœıÿÿÿÿ
-=squid:S1640"Convert this Map to an EnumMap.(öÊ ¡8—Ç¾ÿÃ-
-nsquid:S3008"RRename this field "FLPorts" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉÖ³Ùøÿÿÿÿ
-Fsquid:S1148#"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§¶µ¿¿-
-Rsquid:S2864<"4Iterate over the "entrySet" instead of the "keySet".(˜©¦Ì8¥¶ëÀ¿-
-wsquid:S3008"TRename this field "Positions" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸¦äÛşÿÿÿÿ8ùÛû¿¿-
-nsquid:S3008"RRename this field "FRPorts" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û‘ê£ùÿÿÿÿ
-nsquid:S3008"RRename this field "BRPorts" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂšÿÏşÿÿÿÿ
-Rsquid:S2864W"4Iterate over the "entrySet" instead of the "keySet".(˜©¦Ì8³ Õ¿¿-
-isquid:S3008"RRename this field "Offsets" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â´˜
-Rsquid:S2864f"4Iterate over the "entrySet" instead of the "keySet".(˜©¦Ì8¨¸±¤Ø-
