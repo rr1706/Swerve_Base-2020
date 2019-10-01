@@ -60,7 +60,7 @@ class SwerveModule {
         angleError = rotationMotor.getClosedLoopError(0);
 
         // 359 --> 361 instead of 359 --> 1, so module does not reverse rotation when crossing 0 degrees
-        rotationCount = Math.floor((rotationMotor.getSensorCollection().getAnalogIn()) / ticksPerRevolution);
+        rotationCount = Math.floor(rotationMotor.getSensorCollection().getAnalogIn() / ticksPerRevolution);
         unwrappedAngleCommand = angleCommand + rotationCount * ticksPerRevolution;
         unwrappedAngleError = unwrappedAngleCommand - rotationMotor.getSensorCollection().getAnalogIn();
 
