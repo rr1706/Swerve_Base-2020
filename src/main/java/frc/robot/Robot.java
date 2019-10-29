@@ -41,6 +41,10 @@ public class Robot extends TimedRobot {
     xbox1.setDeadband(0.09);
     //xbox2.setDeadband(0.09);
   }
+
+  public void robotPeriodic() {
+    driveTrain.printTest();
+  }
   
   @Override
   public void autonomousInit() {
@@ -68,6 +72,7 @@ public class Robot extends TimedRobot {
       driveTrain.unlock();
     }
 
+
     if (xbox1.RB()) {
       driveTrain.drive(new Pair<>(STR, FWD), RCW);
     } else {
@@ -77,6 +82,12 @@ public class Robot extends TimedRobot {
     if (xbox1.Back()) {
       imu.reset(0.0);
     }
+
+
+//    if (Math.abs(xbox1.RStickY()) > 0.0008) {
+
+
+//    }
 }
 
   @Override
@@ -85,6 +96,7 @@ public class Robot extends TimedRobot {
 
   @Override
   public void testPeriodic() {
+    driveTrain.setTest(xbox1.RStickY(), xbox1.LStickY());
   }
 
 }

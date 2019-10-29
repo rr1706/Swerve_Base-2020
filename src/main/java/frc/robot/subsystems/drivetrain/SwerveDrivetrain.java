@@ -46,10 +46,10 @@ public class SwerveDrivetrain {
     }
 
     public SwerveDrivetrain() {
-        swerveModules.put(WheelType.FRONT_RIGHT, new SwerveModule(Integer.parseInt(FRPorts[0]), Integer.parseInt(FRPorts[1]), Integer.parseInt(FRPorts[2]), Integer.parseInt(FRPorts[3]), Double.valueOf(Offsets[0]), Positions[0],  Integer.parseInt(TicksPerRev)));
-        swerveModules.put(WheelType.BACK_RIGHT, new SwerveModule(Integer.parseInt(BRPorts[0]), Integer.parseInt(BRPorts[1]), Integer.parseInt(BRPorts[2]), Integer.parseInt(BRPorts[3]), Double.valueOf(Offsets[3]), Positions[3],  Integer.parseInt(TicksPerRev)));
-        swerveModules.put(WheelType.BACK_LEFT, new SwerveModule(Integer.parseInt(BLPorts[0]), Integer.parseInt(BLPorts[1]), Integer.parseInt(BLPorts[2]), Integer.parseInt(BLPorts[3]), Double.valueOf(Offsets[2]), Positions[2],  Integer.parseInt(TicksPerRev)));
-        swerveModules.put(WheelType.FRONT_LEFT, new SwerveModule(Integer.parseInt(FLPorts[0]), Integer.parseInt(FLPorts[1]), Integer.parseInt(FLPorts[2]), Integer.parseInt(FLPorts[3]), Double.valueOf(Offsets[1]), Positions[1],  Integer.parseInt(TicksPerRev)));
+        swerveModules.put(WheelType.FRONT_RIGHT, new SwerveModule(Integer.parseInt(FRPorts[0]), Integer.parseInt(FRPorts[1]), Integer.parseInt(FRPorts[2]), Double.valueOf(Offsets[0]), Positions[0],  Integer.parseInt(TicksPerRev)));
+        swerveModules.put(WheelType.BACK_RIGHT, new SwerveModule(Integer.parseInt(BRPorts[0]), Integer.parseInt(BRPorts[1]), Integer.parseInt(BRPorts[2]), Double.valueOf(Offsets[3]), Positions[3],  Integer.parseInt(TicksPerRev)));
+        swerveModules.put(WheelType.BACK_LEFT, new SwerveModule(Integer.parseInt(BLPorts[0]), Integer.parseInt(BLPorts[1]), Integer.parseInt(BLPorts[2]), Double.valueOf(Offsets[2]), Positions[2],  Integer.parseInt(TicksPerRev)));
+        swerveModules.put(WheelType.FRONT_LEFT, new SwerveModule(Integer.parseInt(FLPorts[0]), Integer.parseInt(FLPorts[1]), Integer.parseInt(FLPorts[2]), Double.valueOf(Offsets[1]), Positions[1],  Integer.parseInt(TicksPerRev)));
 
     }
 
@@ -103,5 +103,16 @@ public class SwerveDrivetrain {
             SwerveModule wheel = swerveModules.get(type);
             wheel.setDefenceMode(0.0);
         }
+    }
+    public void printTest() {
+//        swerveModules.get(WheelType.FRONT_LEFT).print();
+        swerveModules.get(WheelType.FRONT_RIGHT).print();
+//        swerveModules.get(WheelType.BACK_RIGHT).print();
+//        swerveModules.get(WheelType.BACK_LEFT).print();
+    }
+    public void setTest(double rightY, double leftY)
+    {
+        swerveModules.get(WheelType.FRONT_RIGHT).setTestRotationMotor(rightY);
+        swerveModules.get(WheelType.FRONT_RIGHT).setTestTranslationMotor(leftY);
     }
 }
