@@ -17,7 +17,6 @@ public class SwerveDrivetrain {
     private static String[] BRPorts;
     private static String[] Offsets;
     private static String[] Positions;
-    private static String TicksPerRev;
 
     public enum WheelType {
         FRONT_RIGHT, FRONT_LEFT, BACK_LEFT, BACK_RIGHT
@@ -41,15 +40,13 @@ public class SwerveDrivetrain {
         BLPorts = application.get("back_left_ports").toString().split(",");
         Offsets = application.get("offsets").toString().split(",");
         Positions = application.get("positions").toString().split(":");
-        TicksPerRev = application.get("ticks_per_revolution").toString();
-
     }
 
     public SwerveDrivetrain() {
-        swerveModules.put(WheelType.FRONT_RIGHT, new SwerveModule(Integer.parseInt(FRPorts[0]), Integer.parseInt(FRPorts[1]), Integer.parseInt(FRPorts[2]), Double.valueOf(Offsets[0]), Positions[0],  Integer.parseInt(TicksPerRev)));
-        swerveModules.put(WheelType.BACK_RIGHT, new SwerveModule(Integer.parseInt(BRPorts[0]), Integer.parseInt(BRPorts[1]), Integer.parseInt(BRPorts[2]), Double.valueOf(Offsets[3]), Positions[3],  Integer.parseInt(TicksPerRev)));
-        swerveModules.put(WheelType.BACK_LEFT, new SwerveModule(Integer.parseInt(BLPorts[0]), Integer.parseInt(BLPorts[1]), Integer.parseInt(BLPorts[2]), Double.valueOf(Offsets[2]), Positions[2],  Integer.parseInt(TicksPerRev)));
-        swerveModules.put(WheelType.FRONT_LEFT, new SwerveModule(Integer.parseInt(FLPorts[0]), Integer.parseInt(FLPorts[1]), Integer.parseInt(FLPorts[2]), Double.valueOf(Offsets[1]), Positions[1],  Integer.parseInt(TicksPerRev)));
+        swerveModules.put(WheelType.FRONT_RIGHT, new SwerveModule(Integer.parseInt(FRPorts[0]), Integer.parseInt(FRPorts[1]), Integer.parseInt(FRPorts[2]), Double.valueOf(Offsets[0]), Positions[0]));
+        swerveModules.put(WheelType.BACK_RIGHT, new SwerveModule(Integer.parseInt(BRPorts[0]), Integer.parseInt(BRPorts[1]), Integer.parseInt(BRPorts[2]), Double.valueOf(Offsets[3]), Positions[3]));
+        swerveModules.put(WheelType.BACK_LEFT, new SwerveModule(Integer.parseInt(BLPorts[0]), Integer.parseInt(BLPorts[1]), Integer.parseInt(BLPorts[2]), Double.valueOf(Offsets[2]), Positions[2]));
+        swerveModules.put(WheelType.FRONT_LEFT, new SwerveModule(Integer.parseInt(FLPorts[0]), Integer.parseInt(FLPorts[1]), Integer.parseInt(FLPorts[2]), Double.valueOf(Offsets[1]), Positions[1]));
 
     }
 
@@ -69,7 +66,7 @@ public class SwerveDrivetrain {
             double speed = Math.sqrt(Math.pow(wxi, 2) + Math.pow(wyi, 2));
             double angle = Math.atan2(wxi, wyi);
             wheel.setSpeedCommand(speed);
-            wheel.setAngleCommand(MathUtils.convertRange(0.0, 360.0, 0.0, 1024.0, MathUtils.resolveAngle(Math.toDegrees(angle) + wheel.getOffset())));
+            wheel.setAngleCommand(MathUtils.resolveAngle(Math.toDegrees(angle) + wheel.getOffset()));
 
             // find the maximum speed command for normalizing below
             if (speed > max) {
@@ -110,9 +107,10 @@ public class SwerveDrivetrain {
 //        swerveModules.get(WheelType.BACK_RIGHT).print();
 //        swerveModules.get(WheelType.BACK_LEFT).print();
     }
-    public void setTest(double rightY, double leftY)
+
+    public void setTest(double rotationCommand, double translationCommand)
     {
-        swerveModules.get(WheelType.FRONT_RIGHT).setTestRotationMotor(rightY);
-        swerveModules.get(WheelType.FRONT_RIGHT).setTestTranslationMotor(leftY);
+        swerveModules.get(WheelType.FRONT_RIGHT).setTestRotationMotor(rotationCommand);
+        swerveModules.get(WheelType.FRONT_RIGHT).setTestTranslationMotor(translationCommand);
     }
 }

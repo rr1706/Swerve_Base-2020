@@ -66,6 +66,8 @@ public class Robot extends TimedRobot {
     STR = -xbox1.LStickX() / 10.5 * DriverStation.getBatteryVoltage();
     RCW = xbox1.RStickX()/ 10.5 * DriverStation.getBatteryVoltage();
 
+    driveTrain.printTest();
+
     if (xbox1.RStickButton()) {
       driveTrain.lock();
     } else {
@@ -73,21 +75,16 @@ public class Robot extends TimedRobot {
     }
 
 
-    if (xbox1.RB()) {
+//    if (xbox1.RB()) {
       driveTrain.drive(new Pair<>(STR, FWD), RCW);
-    } else {
-      driveTrain.drive(MathUtils.convertOrientation(imu.getAngle(), FWD, STR), RCW);
-    }
+//    } else {
+//      driveTrain.drive(MathUtils.convertOrientation(imu.getAngle(), FWD, STR), RCW);
+//    }
 
     if (xbox1.Back()) {
       imu.reset(0.0);
     }
 
-
-//    if (Math.abs(xbox1.RStickY()) > 0.0008) {
-
-
-//    }
 }
 
   @Override
@@ -96,7 +93,8 @@ public class Robot extends TimedRobot {
 
   @Override
   public void testPeriodic() {
-    driveTrain.setTest(xbox1.RStickY(), xbox1.LStickY());
+    driveTrain.printTest();
+    driveTrain.setTest(0.0, 0.0);
   }
 
 }
