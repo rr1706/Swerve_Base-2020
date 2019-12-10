@@ -36,14 +36,11 @@ public class Robot extends TimedRobot {
 
   @Override
   public void robotInit() {
+    SwerveDrivetrain.loadPorts("/home/lvuser/deploy/settings/drivetrain/drive_settings.txt");
     driveTrain = new SwerveDrivetrain();
     IMU.init();
     xbox1.setDeadband(0.09);
     //xbox2.setDeadband(0.09);
-  }
-
-  public void robotPeriodic() {
-    driveTrain.printTest();
   }
   
   @Override
@@ -66,25 +63,21 @@ public class Robot extends TimedRobot {
     STR = -xbox1.LStickX() / 10.5 * DriverStation.getBatteryVoltage();
     RCW = xbox1.RStickX()/ 10.5 * DriverStation.getBatteryVoltage();
 
-    driveTrain.printTest();
-
     if (xbox1.RStickButton()) {
       driveTrain.lock();
     } else {
       driveTrain.unlock();
     }
 
-
-//    if (xbox1.RB()) {
+    if (xbox1.RB()) {
       driveTrain.drive(new Pair<>(STR, FWD), RCW);
-//    } else {
-//      driveTrain.drive(MathUtils.convertOrientation(imu.getAngle(), FWD, STR), RCW);
-//    }
+    } else {
+      driveTrain.drive(MathUtils.convertOrientation(imu.getAngle(), FWD, STR), RCW);
+    }
 
     if (xbox1.Back()) {
       imu.reset(0.0);
     }
-
 }
 
   @Override
@@ -93,8 +86,6 @@ public class Robot extends TimedRobot {
 
   @Override
   public void testPeriodic() {
-    driveTrain.printTest();
-    driveTrain.setTest(0.1, 0.05);
   }
 
 }
