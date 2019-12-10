@@ -1,5 +1,6 @@
 package frc.robot.subsystems.drivetrain;
 
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.utilities.MathUtils;
 import frc.robot.utilities.Pair;
 
@@ -10,13 +11,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
+import static frc.robot.Settings.DriveSettings.*;
+
 public class SwerveDrivetrain {
-    private static String[] FRPorts;
-    private static String[] FLPorts;
-    private static String[] BLPorts;
-    private static String[] BRPorts;
-    private static String[] Offsets;
-    private static String[] Positions;
 
     public enum WheelType {
         FRONT_RIGHT, FRONT_LEFT, BACK_LEFT, BACK_RIGHT
@@ -24,30 +21,11 @@ public class SwerveDrivetrain {
 
     private static Map<WheelType, SwerveModule> swerveModules = new HashMap<>();
 
-    public static void loadPorts(String pathname) {
-        Properties application = new Properties();
-        File offsets = new File(pathname);
-        try {
-            FileInputStream in = new FileInputStream(offsets);
-            application.load(in);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        FRPorts = application.get("front_right_ports").toString().split(",");
-        FLPorts = application.get("front_left_ports").toString().split(",");
-        BRPorts = application.get("back_right_ports").toString().split(",");
-        BLPorts = application.get("back_left_ports").toString().split(",");
-        Offsets = application.get("offsets").toString().split(",");
-        Positions = application.get("positions").toString().split(":");
-    }
-
     public SwerveDrivetrain() {
-        swerveModules.put(WheelType.FRONT_RIGHT, new SwerveModule(Integer.parseInt(FRPorts[0]), Integer.parseInt(FRPorts[1]), Integer.parseInt(FRPorts[2]), Double.valueOf(Offsets[0]), Positions[0]));
-        swerveModules.put(WheelType.BACK_RIGHT, new SwerveModule(Integer.parseInt(BRPorts[0]), Integer.parseInt(BRPorts[1]), Integer.parseInt(BRPorts[2]), Double.valueOf(Offsets[3]), Positions[3]));
-        swerveModules.put(WheelType.BACK_LEFT, new SwerveModule(Integer.parseInt(BLPorts[0]), Integer.parseInt(BLPorts[1]), Integer.parseInt(BLPorts[2]), Double.valueOf(Offsets[2]), Positions[2]));
-        swerveModules.put(WheelType.FRONT_LEFT, new SwerveModule(Integer.parseInt(FLPorts[0]), Integer.parseInt(FLPorts[1]), Integer.parseInt(FLPorts[2]), Double.valueOf(Offsets[1]), Positions[1]));
-
+        swerveModules.put(WheelType.FRONT_RIGHT, new SwerveModule(translationPorts[0], rotationPorts[0], potentiometerPorts[0], offsets[0], frontRightPos));
+        swerveModules.put(WheelType.FRONT_LEFT, new SwerveModule(translationPorts[1], rotationPorts[1], potentiometerPorts[1], offsets[1], frontLeftPos));
+        swerveModules.put(WheelType.BACK_LEFT, new SwerveModule(translationPorts[2], rotationPorts[2], potentiometerPorts[2], offsets[2], backLeftPos));
+        swerveModules.put(WheelType.BACK_RIGHT, new SwerveModule(translationPorts[3], rotationPorts[3], potentiometerPorts[3], offsets[3], backRightPos));
     }
 
     public void drive(Pair<Double, Double> translation, double rotation) {
@@ -102,10 +80,15 @@ public class SwerveDrivetrain {
         }
     }
     public void printTest() {
-//        swerveModules.get(WheelType.FRONT_LEFT).print();
-        swerveModules.get(WheelType.FRONT_RIGHT).print();
-//        swerveModules.get(WheelType.BACK_RIGHT).print();
-//        swerveModules.get(WheelType.BACK_LEFT).print();
+        SmartDashboard.putNumber("Front Right Angle", swerveModules.get(WheelType.FRONT_RIGHT).getAngle());
+        SmartDashboard.putNumber("Front Left Angle", swerveModules.get(WheelType.FRONT_LEFT).getAngle());
+        SmartDashboard.putNumber("Back Left Angle", swerveModules.get(WheelType.BACK_LEFT).getAngle());
+        SmartDashboard.putNumber("Back Right Angle", swerveModules.get(WheelType.BACK_RIGHT).getAngle());
+
+        SmartDashboard.putNumber("Front Right Angle Command", swerveModules.get(WheelType.FRONT_RIGHT).getAngleCommand());
+//        SmartDashboard.putNumber("Front Left Angle", swerveModules.get(WheelType.FRONT_LEFT).getAngle());
+//        SmartDashboard.putNumber("Back Left Angle", swerveModules.get(WheelType.BACK_LEFT).getAngle());
+//        SmartDashboard.putNumber("Back Right Angle", swerveModules.get(WheelType.BACK_RIGHT).getAngle());
     }
 
     public void setTest(double rotationCommand, double translationCommand)
@@ -113,4 +96,5 @@ public class SwerveDrivetrain {
         swerveModules.get(WheelType.FRONT_RIGHT).setTestRotationMotor(rotationCommand);
         swerveModules.get(WheelType.FRONT_RIGHT).setTestTranslationMotor(translationCommand);
     }
+
 }

@@ -12,18 +12,16 @@ class SwerveModule {
     private static final int CAN_TIMEOUT = 20;
 
     private CANSparkMax translationMotor;
-    private CANEncoder translationEncoder;
 
     private CANSparkMax rotationMotor;
     private Potentiometer potentiometer;
     private PIDController rotationPID;
-    private double rotationP = 6.7e-3;
 
     private double offset;
+    private double rotationPower;
     private double speedCommand;
-    private double angleCommand;
+    private double angleCommand ;
     private double distance;
-    private double angleError;
     private double actualAngle;
     private boolean wheelReversed = false;
     private Pair <Double, Double> position;
@@ -34,10 +32,11 @@ class SwerveModule {
 
     private double defence = 0.0;
 
-    SwerveModule(int translationPort, int rotationPort, int potentiometerPort, double potentiometerOffset, String position) {
+    SwerveModule(int translationPort, int rotationPort, int potentiometerPort, double potentiometerOffset, Pair<Double, Double> position) {
         super();
+        double rotationP = 6.7e-3;
 
-        translationMotor = new CANSparkMax(1, CANSparkMaxLowLevel.MotorType.kBrushless);
+        translationMotor = new CANSparkMax(translationPort, CANSparkMaxLowLevel.MotorType.kBrushless);
         translationMotor.setInverted(false);
         translationMotor.setSmartCurrentLimit(40, 20);
         translationMotor.setPeriodicFramePeriod(CANSparkMaxLowLevel.PeriodicFrame.kStatus2, 5);
@@ -46,7 +45,7 @@ class SwerveModule {
         translationMotor.burnFlash();
 
 
-        rotationMotor = new CANSparkMax(2, CANSparkMaxLowLevel.MotorType.kBrushless);
+        rotationMotor = new CANSparkMax(rotationPort, CANSparkMaxLowLevel.MotorType.kBrushless);
         rotationMotor.setInverted(false);
         rotationMotor.setSmartCurrentLimit(40, 20);
         rotationMotor.setPeriodicFramePeriod(CANSparkMaxLowLevel.PeriodicFrame.kStatus2, 5);
@@ -64,19 +63,11 @@ class SwerveModule {
         potentiometer = new AnalogPotentiometer(potentiometerPort, (360.0), 0.0);
 
         offset = potentiometerOffset;
-
-        String[] pos = position.split(",");
-        this.position = new Pair<>(Double.valueOf(pos[0]), Double.valueOf(pos[1]));
+        setPosition(position);
     }
 
     void drive() {
-//        double rotationCount;
-//        double unwrappedAngleCommand;
-//        double unwrappedAngleError;
-//        double finalAngleCommand;
-
-
-        actualAngle = SmartDashboard.getNumber("Test Angle", 0.0);
+        actualAngle = potentiometer.get();
 
         //If translation isn't being commanded, the wheel angle shouldn't reset to zero
         if (Math.abs(speedCommand ) < 0.04) {
@@ -97,20 +88,16 @@ class SwerveModule {
 
         rotationPID.setSetpoint(angleCommand);
 
-
-        System.out.println(wheelReversed  + "  |      |  " + angleCommand + "  |      |  " + actualAngle + "  |      |  " + rotationPID.performPID() + "  |      |  " + rotationPID.getError());
-
-
         translationMotor.set(speedCommand);
 
 
         //This should be negative, otherwise it gets angry
-        rotationMotor.set(-rotationPID.performPID());
+        rotationPower = -rotationPID.performPID();
+        rotationMotor.set(rotationPower);
 
         prevAngleCommand = angleCommand;
 
         // Translate unless the wheel has to move over 22.5 degrees
-//        angleError = 0.0;
 //        if (Math.abs(angleError) < ticksPerRevolution * 0.125) {
 //            translationMotor.set(speedCommand);
 //        } else {
@@ -150,7 +137,11 @@ class SwerveModule {
     }
 
     public double getAngle() {
-        return actualAngle;
+        return MathUtils.resolveAngle(potentiometer.get() - offset);
+    }
+
+    public double getAngleCommand() {
+        return angleCommand;
     }
 
     public double getDistance() {
@@ -161,10 +152,9 @@ class SwerveModule {
         return offset;
     }
 
-    void print()
+    double getRotationPower()
     {
-        SmartDashboard.putNumber("Test Angle", potentiometer.get());
-//        System.out.println(speedCommand + "  |      |  " + angleCommand + "  |      |  " + potentiometer.get() + "  |      |  " + rotationPID.performPID());
+        return rotationPower;
     }
 
     //To be used for diagnostics only. Disable any other settings of the chosen motor variables

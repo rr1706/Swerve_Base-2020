@@ -35,7 +35,6 @@ public class Robot extends TimedRobot {
 
   @Override
   public void robotInit() {
-    SwerveDrivetrain.loadPorts("/home/lvuser/deploy/settings/drivetrain/drive_settings.txt");
     driveTrain = new SwerveDrivetrain();
     IMU.init();
     xbox1.setDeadband(0.09);
@@ -94,7 +93,7 @@ public class Robot extends TimedRobot {
   @Override
   public void testPeriodic() {
     driveTrain.printTest();
-    driveTrain.setTest(0.0, 0.0);
+    driveTrain.setTest(0.1, 0.05);
   }
 
 }
