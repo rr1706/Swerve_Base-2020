@@ -17,6 +17,30 @@ public class MathUtils {
         return new Pair<>(x, y);
     }
 
+
+
+    /**
+     * Calculates the error between a sensor and desired direction
+     * @param setpoint Direction in degrees
+     * @param input Sensor in degrees
+     * @return Error
+     */
+    public static double calculateContinuousError(double setpoint, double input, double maximumInput, double minimumInput) {
+        // Calculate the error signal
+        double error = setpoint - input;
+
+        if (Math.abs(error) > (maximumInput - minimumInput) / 2) {
+            if (error > 0) {
+                error = error - maximumInput + minimumInput;
+            } else {
+                error = error + maximumInput - minimumInput;
+            }
+        }
+
+        return error;
+    }
+
+
     // Returns the equivalent value between two different ranges
     public static double convertRange(double oldMin, double oldMax, double newMin, double newMax, double oldValue) {
         double oldRange = (oldMax - oldMin);
