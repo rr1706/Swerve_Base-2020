@@ -75,7 +75,7 @@ class SwerveModule {
         }
 
 
-        // If wheel direction has to move over 45 degrees, go 180 off the command and reverse translation
+        // If wheel direction has to move over 90 degrees, go 180 off the command and reverse translation
         if (Math.abs(angleCommand - actualAngle) > 90.0) {
             angleCommand = MathUtils.resolveAngle(angleCommand + 180.0);
             wheelReversed = true;

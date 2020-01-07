@@ -63,7 +63,7 @@ public class Robot extends TimedRobot {
     // Drive commands (-1.0 to 1.0)
     FWD = xbox1.LStickY() / 10.5 * DriverStation.getBatteryVoltage();
     STR = -xbox1.LStickX() / 10.5 * DriverStation.getBatteryVoltage();
-    RCW = xbox1.RStickX()/ 10.5 * DriverStation.getBatteryVoltage();
+    RCW = -xbox1.RStickX()/ 10.5 * DriverStation.getBatteryVoltage();
 
     driveTrain.printTest();
 
@@ -74,11 +74,11 @@ public class Robot extends TimedRobot {
     }
 
 
-//    if (xbox1.RB()) {
+    if (xbox1.RB()) {
       driveTrain.drive(new Pair<>(STR, FWD), RCW);
-//    } else {
-//      driveTrain.drive(MathUtils.convertOrientation(imu.getAngle(), FWD, STR), RCW);
-//    }
+    } else {
+      driveTrain.drive(MathUtils.convertOrientation(imu.getAngle(), FWD, STR), RCW);
+    }
 
     if (xbox1.Back()) {
       imu.reset(0.0);

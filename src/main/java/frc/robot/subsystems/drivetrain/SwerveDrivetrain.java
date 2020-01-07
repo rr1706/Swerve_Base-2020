@@ -3,13 +3,8 @@ package frc.robot.subsystems.drivetrain;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.utilities.MathUtils;
 import frc.robot.utilities.Pair;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Properties;
 
 import static frc.robot.Settings.DriveSettings.*;
 
@@ -84,11 +79,6 @@ public class SwerveDrivetrain {
         SmartDashboard.putNumber("Front Left Angle", swerveModules.get(WheelType.FRONT_LEFT).getAngle());
         SmartDashboard.putNumber("Back Left Angle", swerveModules.get(WheelType.BACK_LEFT).getAngle());
         SmartDashboard.putNumber("Back Right Angle", swerveModules.get(WheelType.BACK_RIGHT).getAngle());
-
-        SmartDashboard.putNumber("Front Right Angle Command", swerveModules.get(WheelType.FRONT_RIGHT).getAngleCommand());
-//        SmartDashboard.putNumber("Front Left Angle", swerveModules.get(WheelType.FRONT_LEFT).getAngle());
-//        SmartDashboard.putNumber("Back Left Angle", swerveModules.get(WheelType.BACK_LEFT).getAngle());
-//        SmartDashboard.putNumber("Back Right Angle", swerveModules.get(WheelType.BACK_RIGHT).getAngle());
     }
 
     public void setTest(double rotationCommand, double translationCommand)

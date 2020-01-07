@@ -16,6 +16,6 @@ public class DriveSettings {
     //Physical location of each module's center relative to robot's center in inches
     public static final Pair<Double, Double> frontRightPos = new Pair<>(14.25, 9.375);
     public static final Pair<Double, Double> frontLeftPos = new Pair<>(14.25, -9.375);
-    public static final Pair<Double, Double> backLeftPos = new Pair<>(-14.25, 9.375);
-    public static final Pair<Double, Double> backRightPos = new Pair<>(-14.25, -9.375);
+    public static final Pair<Double, Double> backLeftPos = new Pair<>(-14.25, -9.375);
+    public static final Pair<Double, Double> backRightPos = new Pair<>(-14.25, 9.375);
 }
