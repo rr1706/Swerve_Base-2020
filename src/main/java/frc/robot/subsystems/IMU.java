@@ -11,7 +11,7 @@ import frc.robot.utilities.MathUtils;
 public class IMU {
 	private static AHRS ahrs;
 
-	private double offset = 0.0;
+	private double offset = 0;
 
 	/**
 	 * Connects to the navX

@@ -8,6 +8,10 @@ public class Pair<T,  K> {
         set(first, second);
     }
 
+    public  Pair() {
+
+    }
+
     public void set(T  first, K second) {
         this.first = first;
         this.second = second;

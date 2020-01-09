@@ -21,7 +21,6 @@ import frc.robot.utilities.XboxController;
  * creating this project, you must also update the build.gradle file in the
  * project.
  */
-
 public class Robot extends TimedRobot {
   private SwerveDrivetrain driveTrain;
 
@@ -36,11 +35,14 @@ public class Robot extends TimedRobot {
 
   @Override
   public void robotInit() {
-    SwerveDrivetrain.loadPorts("/home/lvuser/deploy/settings/drivetrain/drive_settings.txt");
     driveTrain = new SwerveDrivetrain();
     IMU.init();
     xbox1.setDeadband(0.09);
     //xbox2.setDeadband(0.09);
+  }
+
+  public void robotPeriodic() {
+    driveTrain.printTest();
   }
   
   @Override
@@ -61,13 +63,16 @@ public class Robot extends TimedRobot {
     // Drive commands (-1.0 to 1.0)
     FWD = xbox1.LStickY() / 10.5 * DriverStation.getBatteryVoltage();
     STR = -xbox1.LStickX() / 10.5 * DriverStation.getBatteryVoltage();
-    RCW = xbox1.RStickX()/ 10.5 * DriverStation.getBatteryVoltage();
+    RCW = -xbox1.RStickX()/ 10.5 * DriverStation.getBatteryVoltage();
+
+    driveTrain.printTest();
 
     if (xbox1.RStickButton()) {
       driveTrain.lock();
     } else {
       driveTrain.unlock();
     }
+
 
     if (xbox1.RB()) {
       driveTrain.drive(new Pair<>(STR, FWD), RCW);
@@ -78,6 +83,7 @@ public class Robot extends TimedRobot {
     if (xbox1.Back()) {
       imu.reset(0.0);
     }
+
 }
 
   @Override
@@ -86,6 +92,8 @@ public class Robot extends TimedRobot {
 
   @Override
   public void testPeriodic() {
+    driveTrain.printTest();
+    driveTrain.setTest(0.1, 0.05);
   }
 
 }

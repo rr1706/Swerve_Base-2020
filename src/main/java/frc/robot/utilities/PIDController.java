@@ -149,7 +149,12 @@ public class PIDController {
 	 */
 	public double performPID() {
 		calculate();
-		return m_result;
+
+		if (onTarget()) {
+			return 0.0;
+		} else {
+			return m_result;
+		}
 	}
 
 	/**
@@ -252,7 +257,7 @@ public class PIDController {
 	 * @return true if the error is less than the tolerance
 	 */
 	public boolean onTarget() {
-		return (Math.abs(m_error) < m_tolerance / 100 * (m_maximumInput - m_minimumInput));
+		return (Math.abs(m_error) < m_tolerance / 100.0 * (m_maximumInput - m_minimumInput));
 	}
 
 	/**
