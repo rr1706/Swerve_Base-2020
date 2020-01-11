@@ -8,6 +8,7 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
+import frc.robot.Autonomous;
 import frc.robot.subsystems.IMU;
 import frc.robot.subsystems.drivetrain.SwerveDrivetrain;
 import frc.robot.utilities.MathUtils;
@@ -47,11 +48,12 @@ public class Robot extends TimedRobot {
   
   @Override
   public void autonomousInit() {
+    Autonomous.init();
   }
 
   @Override
   public void autonomousPeriodic() {
-    teleopPeriodic();
+    Autonomous.periodic();
   }
 
   @Override
