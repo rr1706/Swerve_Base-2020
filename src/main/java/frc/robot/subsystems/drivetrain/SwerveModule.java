@@ -2,7 +2,6 @@ package frc.robot.subsystems.drivetrain;
 
 import edu.wpi.first.wpilibj.AnalogPotentiometer;
 import com.revrobotics.*;
-import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.interfaces.Potentiometer;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.utilities.MathUtils;
@@ -11,7 +10,6 @@ import frc.robot.utilities.Pair;
 
 class SwerveModule {
     private static final int CAN_TIMEOUT = 20;
-    //Change angleCommand to fit this range
     private static final double POTENTIOMETER_RANGE = 360.0;
 
     private CANSparkMax translationMotor;
@@ -48,7 +46,6 @@ class SwerveModule {
 
         translationMotor.burnFlash();
 
-
         rotationMotor = new CANSparkMax(rotationPort, CANSparkMaxLowLevel.MotorType.kBrushless);
         rotationMotor.setInverted(false);
         rotationMotor.setSmartCurrentLimit(40, 20);
@@ -75,12 +72,11 @@ class SwerveModule {
         actualAngle = potentiometer.get();
 
         //If translation isn't being commanded, the wheel angle shouldn't reset to zero
-        if (Math.abs(speedCommand ) < 0.04) {
+        if (Math.abs(speedCommand) < 0.04) {
             angleCommand = prevAngleCommand;
         }
 
         continuousAngleError = Math.abs(MathUtils.calculateContinuousError(angleCommand, actualAngle, POTENTIOMETER_RANGE, 0.0));
-
 
         // If wheel direction has to move over 90 degrees, go 180 off the command and reverse translation
         if (continuousAngleError > POTENTIOMETER_RANGE*0.25) {
@@ -97,20 +93,10 @@ class SwerveModule {
 
         translationMotor.set(speedCommand);
 
-
-        //This should be negative, otherwise it gets angry
         rotationPower = -rotationPID.performPID();
         rotationMotor.set(rotationPower);
 
-
         prevAngleCommand = angleCommand;
-
-        // Turn only when there is a translation or lock command
-//        if (Math.abs(speedCommand) > 0.1 || defence != 0.0) {
-//            rotationMotor.set(ControlMode.Position, finalAngleCommand);
-//        } else {
-//            rotationMotor.set(ControlMode.Current, 0.0);
-//        }
     }
 
     void setDefenceMode(double angle) {
